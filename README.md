@@ -1,7 +1,9 @@
 # Conventions
 ## Naming
 I followed this convention for naming tests
+
 `test<What we are testing>_<Condition Or State Change>_<Expected Result>`
+
 Good test names often contain three parts. I like to use underscores to separate these parts and camel case within each part
 - What we are testing
 - Condition Or State Change
