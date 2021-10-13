@@ -1,5 +1,3 @@
-# Testing Task
-
 # Conventions
 ## Naming
 I followed this convention for naming tests
