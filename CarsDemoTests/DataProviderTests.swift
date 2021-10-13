@@ -16,25 +16,17 @@ class DataProviderTests: XCTestCase {
         sut = DataProvider()
     }
 
-    /// Naming Tests
-    /// test<What we are testing>_<Condition Or State Change>_<Expected Result>
-    ///
-    /// In writing tests, I follow a convention I read about in
-    /// "The Art of Unit Testing: with examples in C#" called AAA (Arrange-Act-Assert).
-    /// So I Separate the Arrange, Act, Assert sections of your tests with blank lines.
-    /// Then each line of test code identifies its purpose.
-    ///
-    ///
     func testCarsCount_AliRedColors_ShouldReturnTwo() {
         /// Arrange
         let expectedCount = 2
+        let ownerName = "Ali"
 
         /// Act
-        let aliRedCars = sut.cars(for: "ali", withColor: .red)
-        let carsCount = aliRedCars.count
+        let ownerRedCars = sut.cars(for: ownerName, withColor: .red)
+        let carsCount = ownerRedCars.count
 
         /// Assert
-        XCTAssertTrue(carsCount == expectedCount, "The returned number of ali cars with red color is \(carsCount) but the expected count is \(expectedCount)")
+        XCTAssertTrue(carsCount == expectedCount, "The returned number of \(ownerName) cars with red color is \(carsCount) but the expected count is \(expectedCount)")
     }
 
     func testCarsCount_WhenNoOwnerWithThisName_ShouldReturnZero() {

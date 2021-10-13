@@ -13,12 +13,10 @@
 		9AFF19E32716E4F000E69D8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFF19E12716E4F000E69D8E /* Main.storyboard */; };
 		9AFF19E52716E4F200E69D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFF19E42716E4F200E69D8E /* Assets.xcassets */; };
 		9AFF19E82716E4F200E69D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFF19E62716E4F200E69D8E /* LaunchScreen.storyboard */; };
-		9AFF19F32716E4F200E69D8E /* CarsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFF19F22716E4F200E69D8E /* CarsDemoTests.swift */; };
 		9AFF19FD2716E4F200E69D8E /* CarsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFF19FC2716E4F200E69D8E /* CarsDemoUITests.swift */; };
 		9AFF1A0D2716E59000E69D8E /* SampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AFF1A0C2716E59000E69D8E /* SampleData.json */; };
 		9AFF1A0F2716E63800E69D8E /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFF1A0E2716E63800E69D8E /* DataProvider.swift */; };
 		9AFF1A112716E66F00E69D8E /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFF1A102716E66F00E69D8E /* Car.swift */; };
-		9AFF1A152716E73A00E69D8E /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFF1A142716E73A00E69D8E /* Color+hex.swift */; };
 		9AFF1A172716E90600E69D8E /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFF1A162716E90600E69D8E /* Owner.swift */; };
 		9AFF1A192716E9D300E69D8E /* Bundle+readFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFF1A182716E9D300E69D8E /* Bundle+readFile.swift */; };
 		9AFF1A1B2716ED8300E69D8E /* SafeEnumDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFF1A1A2716ED8300E69D8E /* SafeEnumDecodable.swift */; };
@@ -53,13 +51,11 @@
 		9AFF19E72716E4F200E69D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AFF19E92716E4F200E69D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AFF19EE2716E4F200E69D8E /* CarsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AFF19F22716E4F200E69D8E /* CarsDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsDemoTests.swift; sourceTree = "<group>"; };
 		9AFF19F82716E4F200E69D8E /* CarsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFF19FC2716E4F200E69D8E /* CarsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsDemoUITests.swift; sourceTree = "<group>"; };
 		9AFF1A0C2716E59000E69D8E /* SampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleData.json; sourceTree = "<group>"; };
 		9AFF1A0E2716E63800E69D8E /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		9AFF1A102716E66F00E69D8E /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
-		9AFF1A142716E73A00E69D8E /* Color+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
 		9AFF1A162716E90600E69D8E /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		9AFF1A182716E9D300E69D8E /* Bundle+readFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+readFile.swift"; sourceTree = "<group>"; };
 		9AFF1A1A2716ED8300E69D8E /* SafeEnumDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeEnumDecodable.swift; sourceTree = "<group>"; };
@@ -132,7 +128,6 @@
 		9AFF19F12716E4F200E69D8E /* CarsDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				9AFF19F22716E4F200E69D8E /* CarsDemoTests.swift */,
 				9AFF1A1C2717006D00E69D8E /* DataProviderTests.swift */,
 			);
 			path = CarsDemoTests;
@@ -168,7 +163,6 @@
 		9AFF1A132716E72700E69D8E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				9AFF1A142716E73A00E69D8E /* Color+hex.swift */,
 				9AFF1A182716E9D300E69D8E /* Bundle+readFile.swift */,
 				9AFF1A1A2716ED8300E69D8E /* SafeEnumDecodable.swift */,
 			);
@@ -312,7 +306,6 @@
 				9AFF19DC2716E4F000E69D8E /* AppDelegate.swift in Sources */,
 				9AFF1A172716E90600E69D8E /* Owner.swift in Sources */,
 				9AFF1A112716E66F00E69D8E /* Car.swift in Sources */,
-				9AFF1A152716E73A00E69D8E /* Color+hex.swift in Sources */,
 				9AFF1A0F2716E63800E69D8E /* DataProvider.swift in Sources */,
 				9AFF1A1B2716ED8300E69D8E /* SafeEnumDecodable.swift in Sources */,
 				9AFF19DE2716E4F000E69D8E /* SceneDelegate.swift in Sources */,
@@ -324,7 +317,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AFF1A1D2717006D00E69D8E /* DataProviderTests.swift in Sources */,
-				9AFF19F32716E4F200E69D8E /* CarsDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
