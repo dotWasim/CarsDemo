@@ -6,27 +6,71 @@
 //
 
 import XCTest
+@testable import CarsDemo
 
 class DataProviderTests: XCTestCase {
+    /// sut is a common name for the thing we're testing
+    var sut: DataProvider!
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    override func setUp() {
+        sut = DataProvider()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    /// Naming Tests
+    /// test<What we are testing>_<Condition Or State Change>_<Expected Result>
+    ///
+    /// In writing tests, I follow a convention I read about in
+    /// "The Art of Unit Testing: with examples in C#" called AAA (Arrange-Act-Assert).
+    /// So I Separate the Arrange, Act, Assert sections of your tests with blank lines.
+    /// Then each line of test code identifies its purpose.
+    ///
+    ///
+    func testCarsCount_AliRedColors_ShouldReturnTwo() {
+        /// Arrange
+        let expectedCount = 2
+
+        /// Act
+        let aliRedCars = sut.cars(for: "ali", withColor: .red)
+        let carsCount = aliRedCars.count
+
+        /// Assert
+        XCTAssertTrue(carsCount == expectedCount, "The returned number of ali cars with red color is \(carsCount) but the expected count is \(expectedCount)")
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCarsCount_WhenNoOwnerWithThisName_ShouldReturnZero() {
+        /// Arrange
+        let ownerName = "Not Available Name"
+
+        /// Act
+        let ownerRedCars = sut.cars(for: ownerName, withColor: .red)
+        let carsCount = ownerRedCars.count
+
+        /// Assert
+        XCTAssertTrue(carsCount == 0, "The returned number of \"\(ownerName)\" cars with red color is \(carsCount) but the expected count is zero because owner name is not available in owners list")
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testCarsCount_WhenOwnerHasNoCar_ShouldReturnZero() {
+        /// Arrange
+        let ownerName = "Sara"
+
+        /// Act
+        let ownerRedCars = sut.cars(for: ownerName, withColor: .red)
+        let carsCount = ownerRedCars.count
+
+        /// Assert
+        XCTAssertTrue(carsCount == 0, "The returned number of \"\(ownerName)\" cars with red color is \(carsCount) but the expected count is zero because owner has no cars")
+    }
+
+    func testCarsCount_WhenOwnerHasNoRedCar_ShouldReturnZero() {
+        /// Arrange
+        let ownerName = "Chris"
+
+        /// Act
+        let ownerRedCars = sut.cars(for: ownerName, withColor: .red)
+        let carsCount = ownerRedCars.count
+
+        /// Assert
+        XCTAssertTrue(carsCount == 0, "The returned number of \"\(ownerName)\" cars with red color is \(carsCount) but the expected count is zero because owner has no red cars")
     }
 
 }

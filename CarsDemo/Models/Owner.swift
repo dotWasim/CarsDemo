@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Owner: Codable {
+struct Owner: Decodable {
     let name: String
     let cars: [Car]?
 }

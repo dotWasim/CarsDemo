@@ -1,0 +1,56 @@
+[
+        {
+            "name": "Ali",
+            "cars": [
+                {
+                    "name": "VW Polo",
+                    "color": "red"
+                },
+                {
+                    "name": "Toyota Corolla",
+                    "color": "black"
+                },
+                {
+                    "name": "Hyndai i20",
+                    "color": "red"
+                }
+            ]
+        },
+        {
+            "name": "John",
+            "cars": [
+                {
+                    "name": "VW Polo",
+                    "color": "green"
+                },
+                {
+                    "name": "Toyota Corolla",
+                    "color": "black"
+                },
+                {
+                    "name": "Hyndai i20",
+                    "color": "red"
+                }
+            ]
+        },
+        {
+            "name": "Chris",
+            "cars": [
+                {
+                    "name": "VW Polo",
+                    "color": "green"
+                },
+                {
+                    "name": "Toyota Corolla",
+                    "color": "black"
+                },
+                {
+                    "name": "Hyndai i20",
+                    "color": "blue"
+                }
+            ]
+        },
+        {
+            "name": "Sara"
+        }
+    ]
